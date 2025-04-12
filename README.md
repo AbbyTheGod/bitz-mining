@@ -10,6 +10,12 @@ source $HOME/.cargo/env
 ```bash 
 curl --proto '=https' --tlsv1.2 -sSfL https://solana-install.solana.workers.dev | bash
 ```
+3.1 Add To Path
+```bash
+echo 'export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
 4. Create a Wallet (Keypair)
 ```bash
 solana-keygen new
